@@ -1,0 +1,6 @@
+{
+  "name": "OptiBloc",
+  "description": "OptiBloc - Immunité Digitale. Lunettes de protection anti-lumière bleue et photochromiques haut de gamme.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

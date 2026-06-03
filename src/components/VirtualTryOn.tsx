@@ -167,7 +167,7 @@ export default function VirtualTryOn({ initialProduct, onClose }: VirtualTryOnPr
   const [isCameraActive, setIsCameraActive] = useState<boolean>(false);
   const [isMirror, setIsMirror] = useState<boolean>(true);
   const [showGuide, setShowGuide] = useState<boolean>(true);
-  const [useRealPhoto, setUseRealPhoto] = useState<boolean>(true);
+  const [useRealPhoto, setUseRealPhoto] = useState<boolean>(false);
 
   // Position control sliders
   const [offsetY, setOffsetY] = useState<number>(0); // Vertical offset in %

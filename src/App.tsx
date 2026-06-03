@@ -280,7 +280,7 @@ export default function App() {
         <Contact />
 
         {/* SATISFACTION BANNER PRO */}
-        <section className="py-24 bg-gradient-to-b from-[#0a0a0a] to-[#121212] border-t border-white/10 relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-b from-zinc-100 to-zinc-50 dark:from-[#0a0a0a] dark:to-[#121212] border-t border-zinc-200 dark:border-white/10 relative overflow-hidden transition-colors duration-300">
           {/* Decorative geometric patterns */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
           
@@ -290,9 +290,9 @@ export default function App() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="p-4 bg-white/5 text-white border border-white/10 rounded-2xl mb-6 flex items-center justify-center"
+              className="p-4 bg-zinc-200/50 dark:bg-white/5 text-zinc-900 dark:text-white border border-zinc-300 dark:border-white/10 rounded-2xl mb-6 flex items-center justify-center transition-colors duration-300"
             >
-              <ShieldCheck className="w-7 h-7" />
+              <ShieldCheck className="w-7 h-7 text-blue-500 dark:text-blue-400" />
             </motion.div>
             
             <motion.h3 
@@ -300,10 +300,10 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-              className="font-serif text-3xl sm:text-4xl italic text-white tracking-tight mb-4 leading-tight"
+              className="font-serif text-3xl sm:text-4xl italic text-zinc-900 dark:text-white tracking-tight mb-4 leading-tight"
             >
               Rejoignez plus de 15,000 Membres<br />
-              <span className="font-sans not-italic font-black text-zinc-400 text-2xl uppercase tracking-widest block mt-2">de la résistance oculaire</span>
+              <span className="font-sans not-italic font-black text-zinc-500 dark:text-zinc-400 text-2xl uppercase tracking-widest block mt-2">de la résistance oculaire</span>
             </motion.h3>
             
             <motion.p 
@@ -311,7 +311,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              className="text-sm text-zinc-455 max-w-xl font-sans mb-8 leading-relaxed"
+              className="text-sm text-zinc-600 dark:text-zinc-400 max-w-xl font-sans mb-8 leading-relaxed"
             >
               Chaque seconde passée sans protection use votre capital visuel de façon irréversible. Commandez votre paire OptiBloc aujourd&apos;hui et bénéficiez d&apos;une livraison sécurisée et rapide sur Lomé avec notre étui prestige inclus.
             </motion.p>
@@ -322,7 +322,7 @@ export default function App() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               onClick={() => handleNavigate('catalog')}
-              className="px-8 py-4 bg-white text-black hover:bg-zinc-200 font-sans text-xs font-bold uppercase tracking-[0.2em] shadow-lg transition-all cursor-pointer"
+              className="px-8 py-4 bg-zinc-950 hover:bg-zinc-800 text-white dark:bg-white dark:text-black dark:hover:bg-zinc-200 font-sans text-xs font-bold uppercase tracking-[0.2em] shadow-lg transition-all cursor-pointer"
             >
               Parcourir tous les verres
             </motion.button>
